@@ -1,0 +1,141 @@
+#home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    overflow: hidden;
+  }
+
+  .logo-box {
+    position: absolute;
+    top: 11px;
+    left: -45px;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 6px;
+    color: #fff;
+    font-family: 'IBM Plex Mono Light', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 43px;
+  }
+
+  .box {
+    position: absolute;
+  }
+
+  .under-construction {
+    margin-bottom: 108px;
+
+    p {
+      margin-left: -20px;
+    }
+  }
+
+  .first-col {
+    width: 300px;
+  }
+
+  .last-col {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  #home {
+    .box {
+      left: 37%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  #home {
+    .box {
+      left: 30%;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #home {
+    p {
+      font-size: 33px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #home {
+    p {
+      font-size: 24px;
+    }
+
+    .under-construction {
+      p {
+        margin-left: -14px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #home {
+    p {
+      font-size: 18px;
+    }
+
+    .under-construction {
+      p {
+        margin-left: -10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #home {
+    .overlay {
+      margin: 95px 100px;
+    }
+
+    .box {
+      bottom: 94px;
+      right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #home {
+    .box {
+      bottom: 20px;
+      right: 0;
+      left: 0;
+      padding: 40px 20px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .under-construction {
+      p {
+        margin-left: -10px;
+      }
+    }
+  }
+}

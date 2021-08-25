@@ -1,7 +1,0 @@
-{% for post in site.posts limit:1 %}
-<h2 class="post-title">{{ post.title }}</h2>
-<small class="post-author">{ {{ post.author }} / {{ post.date | date: "%y.%m.%d" }} }</small>
-<div class="post-excerpt">
-  {{ post.excerpt }}
-</div>
-{% endfor %}

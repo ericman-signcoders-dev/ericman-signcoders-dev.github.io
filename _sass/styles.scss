@@ -1,53 +1,14 @@
 // Base
-@import 'base/colors';
 @import 'base/fonts';
 
 // Includes
-@import 'includes/footer';
 @import 'includes/home';
-@import 'includes/navbar';
 
 body {
   margin: 0;
+  background: url(./../../assets/images/bg.jpg) no-repeat fixed center/cover;
 }
 
-a {
-  text-decoration: none;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 1640px;
-}
-
-.row {
+.flex {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.col {
-  flex: 1 0 0%;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.justify-content-center {
-  justify-content: center;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-.w-100 {
-  width: 100%;
-}
-
-.h-100 {
-  height: 100%;
 }
