@@ -1,0 +1,14 @@
+menu:
+  - title: home
+    id: home
+
+  - title: blog
+    id: blog
+
+  - title: office
+    id: office
+
+  - title: contact
+    id: contact
+
+footer: all rights reserved

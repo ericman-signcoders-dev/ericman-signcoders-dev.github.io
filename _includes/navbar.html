@@ -1,0 +1,44 @@
+<nav class="navbar">
+  <div class="nav">
+    <div class="container h-100">
+      <div class="row align-items-center h-100">
+        <div class="col">
+          {% if page.id != 'home' %}
+          <a href="{{ '/' | relative_url }}" class="navbar-brand">
+            <img src="{{ '/assets/images/logo-secondary.svg' | relative_url }}"
+              alt="logo">
+          </a>
+          {% endif %}
+        </div>
+        <div class="col">
+          <div class="menu">
+            {% for item in site.translations[site.lang].menu %}
+            <div class="menu-item">
+              {% if item.id == "office" or item.id == "contact" %}
+              <a href="{{ site.url }}{{ site.baseurl }}/#{{ item.id }}"
+                class="menu-link">
+                {{ item.title }}
+              </a>
+              {% else %}
+              <a href="{{ site.url }}{{ site.baseurl }}/{{ item.id }}"
+                class="menu-link">
+                {{ item.title }}
+              </a>
+              {% endif %}
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="language-switcher">
+    {% if site.lang == "hu" %}
+    {% capture link1 %}{{ site.baseurl_root }}/en{{ page.url}}{% endcapture %}
+    <a href="{{ link1 }}">EN</a>
+    {% elsif site.lang == "en" %}
+    {% capture link2 %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
+    <a href="{{ link2 }}">HU</a>
+    {% endif %}
+  </div>
+</nav>

@@ -1,0 +1,36 @@
+{
+  "name": "homoki-ugyvedi-iroda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "watch": "gulp watch",
+    "build": "gulp build",
+    "clean": "gulp clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ericman-signcoders-dev/homoki-ugyvedi-iroda.git"
+  },
+  "keywords": [
+    "jekyll"
+  ],
+  "author": "Erik Herczeg",
+  "license": "MIT",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "autoprefixer": "^10.3.2",
+    "browser-sync": "^2.27.5",
+    "cssnano": "^5.0.8",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-shell": "^0.8.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.0.1",
+    "sass": "^1.38.1"
+  }
+}
