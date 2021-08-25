@@ -21,8 +21,8 @@
 title: Homoki Ügyvédi Iroda
 email: peter.homoki@homoki.net
 description: ''
-baseurl: '/homoki-ugyvedi-iroda' # the subpath of your site, e.g. /blog
-url: 'https://ericman-signcoders-dev.github.io' # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: '' # the subpath of your site, e.g. /blog
+url: 'https://homoki.net' # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: minima
