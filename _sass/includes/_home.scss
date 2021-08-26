@@ -10,13 +10,6 @@
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.65);
-    overflow: hidden;
-  }
-
-  .logo-box {
-    position: absolute;
-    top: 11px;
-    left: -45px;
   }
 
   a {
@@ -38,8 +31,6 @@
   }
 
   .under-construction {
-    margin-bottom: 108px;
-
     p {
       margin-left: -20px;
     }
@@ -92,13 +83,31 @@
   }
 }
 
+@media screen and (min-width: 992px) {
+  #home {
+    .box {
+      bottom: 94px;
+    }
+
+    .under-construction {
+      margin-bottom: 108px;
+    }
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 991px) {
   #home {
     p {
       font-size: 18px;
     }
 
+    .box {
+      bottom: 94px;
+    }
+
     .under-construction {
+      margin-bottom: 27px;
+
       p {
         margin-left: -10px;
       }
@@ -110,10 +119,17 @@
   #home {
     .overlay {
       margin: 95px 100px;
+      overflow: hidden;
+    }
+
+    .logo-box {
+      position: absolute;
+      top: 11px;
+      left: -45px;
     }
 
     .box {
-      bottom: 94px;
+      bottom: 20px;
       right: 0;
     }
   }
@@ -121,8 +137,16 @@
 
 @media screen and (max-width: 767px) {
   #home {
+    .overlay {
+      overflow: auto;
+    }
+
+    .logo-box {
+      display: block;
+      text-align: center;
+    }
+
     .box {
-      bottom: 20px;
       right: 0;
       left: 0;
       padding: 40px 20px;
@@ -133,6 +157,8 @@
     }
 
     .under-construction {
+      margin-bottom: 54px;
+
       p {
         margin-left: -10px;
       }
